@@ -35,6 +35,7 @@ Store in DynamoDB
       ↓
 Save JSON Output to S3
 ```
+<img width="677" height="679" alt="image" src="https://github.com/user-attachments/assets/5d1845b8-71d3-41fc-87fa-a0d29c36452c" />
 
 ---
 

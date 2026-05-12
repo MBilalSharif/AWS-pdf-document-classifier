@@ -16,7 +16,7 @@ Built using **AWS Lambda, S3, DynamoDB**, and **PyPDF**, this system demonstrate
 - 📦 Saves processed JSON output back to S3
 - ⚡ Fully serverless and event-driven architecture
 
----
+
 
 ## 🏗️ Architecture
 
@@ -36,7 +36,7 @@ Store in DynamoDB
 Save JSON Output to S3
 
 
----
+
 
 ## 🧠 Supported Document Types
 
@@ -55,7 +55,7 @@ Save JSON Output to S3
 - Phone Number
 - Applicant Details
 
----
+
 
 ## ⚙️ Tech Stack
 
@@ -66,7 +66,7 @@ Save JSON Output to S3
 - **PyPDF** – PDF text extraction  
 - **Regex (re module)** – Pattern matching
 
----
+
 
 ## 🔍 How It Works
 
@@ -81,11 +81,11 @@ Save JSON Output to S3
 6. Data is stored in DynamoDB  
 7. JSON output is saved back to S3  
 
----
+
 
 ## 📦 Example Output
 
-### DynamoDB Record
+## DynamoDB Record
 
 ```json
 {
@@ -96,6 +96,7 @@ Save JSON Output to S3
   "total_amount": "500",
   "processed_at": "2026-05-12T18:00:00"
 }
+
 
 ## 📊 Classification Logic
 
@@ -124,11 +125,12 @@ aws configure
 Upload code to AWS Lambda
 Set S3 trigger for PDF uploads
 Ensure IAM permissions for S3 and DynamoDB
-🔐 IAM Permissions Required
+## 🔐 IAM Permissions Required
 S3 Read/Write Access
 DynamoDB PutItem Access
 CloudWatch Logs Access
-📈 Future Improvements
+
+## 📈 Future Improvements
 Add machine learning-based classification (Amazon Comprehend / Textract)
 Improve OCR support for scanned PDFs
 Add support for more document types (Resume, Contracts, Receipts)

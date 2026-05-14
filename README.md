@@ -1,6 +1,6 @@
 # 📄 Serverless Document Classification System
 
-An intelligent, event-driven document processing pipeline that automatically classifies PDF files and extracts structured metadata using AWS serverless services.
+An intelligent, event-driven document processing pipeline that automatically classifies PDF files and extracts keywords using AWS serverless services.
 
 Built using **AWS Lambda, S3, DynamoDB**, and **PyPDF**, this system demonstrates how to build scalable document intelligence workflows in the cloud.
 
@@ -11,7 +11,7 @@ Built using **AWS Lambda, S3, DynamoDB**, and **PyPDF**, this system demonstrate
 - 📥 Automatic PDF processing from S3 uploads  
 - 🧠 Document classification (Invoice, Sales Report, Customer Application)  
 - 🔍 Weighted keyword + regex-based scoring system  
-- 📊 Metadata extraction (invoice numbers, totals, emails, etc.)  
+- 📊 Keyword extraction (invoice numbers, totals, emails, etc.)  
 - 💾 Stores structured data in DynamoDB  
 - 📦 Saves processed JSON output back to S3  
 - ⚡ Fully serverless and event-driven architecture  
@@ -29,7 +29,7 @@ PDF Text Extraction (PyPDF)
       ↓
 Classification Engine (Weighted Scoring + Regex)
       ↓
-Metadata Extraction
+Keyword Extraction
       ↓
 Store in DynamoDB
       ↓
@@ -78,7 +78,7 @@ Save JSON Output to S3
    - Weighted keyword scoring  
    - Regex pattern matching  
    - Structural analysis  
-5. Relevant metadata is extracted  
+5. Relevant keyword is extracted  
 6. Data is stored in DynamoDB  
 7. JSON output is saved back to S3  
 
